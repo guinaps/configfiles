@@ -1,0 +1,12 @@
+[user]
+	name = Guilherme De Napoli
+	email = guinaps@gmail.com
+
+[diff]
+	color = auto
+[alias]
+	br = branch
+	co = checkout
+	ci = commit
+	st = status
+	h = help
