@@ -1,0 +1,21 @@
+# don't show startup screen
+startup_message off
+
+# redefining command key
+escape ^Ja
+
+# scrollback cache size
+defscrollback 10000
+
+# make screen start bash as a login shell (and load .bash_login)
+shell -$SHELL
+
+# show the name of current process as the window name
+shelltitle "$ |bash"
+
+# 'C-p b' transfers content copied from scrollback to the Mac clipboard
+bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
+
+# status bar at the bottom
+hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
+
