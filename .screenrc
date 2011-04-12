@@ -7,9 +7,6 @@ escape ^Ja
 # scrollback cache size
 defscrollback 10000
 
-# make screen start bash as a login shell (and load .bash_login)
-shell -$SHELL
-
 # show the name of current process as the window name
 shelltitle "$ |bash"
 

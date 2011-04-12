@@ -1,15 +1,3 @@
-
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Jul 02
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -103,12 +91,6 @@ set expandtab
 set number
 set bg=dark
 
-if has("gui_macvim")
-  colorscheme mustang
-else
-  colorscheme ir_black
-endif
-
 """ key mappings
 
 " guarantees that the NERDTrees for all tabs will be one and the same
@@ -130,4 +112,3 @@ let NERDTreeIgnore  = ['\.pyc$']
 let g:netrw_browse_split   = 3
 let g:netrw_liststyle      = 3
 let g:netrw_list_hide      = '\.swp$,\.pyc$'
-

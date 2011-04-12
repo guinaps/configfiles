@@ -1,5 +1,5 @@
-export HISTSIZE=10000
-export HISTFILESIZE=10000
-
-# printing a null title-escape-sequence before prompt so screen can show the name of the current process (see screen's man page)
-export PROMPT_COMMAND='echo -n -e "\033k\033\\"'
+# using .bashrc for both login and non-login shells; shell variables and
+# aliases are defined there
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi

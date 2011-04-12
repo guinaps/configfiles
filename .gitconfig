@@ -4,6 +4,8 @@
 
 [diff]
 	color = auto
+#[core]
+#	excludesfile = /Users/guilherme/.gitignore
 [alias]
 	br = branch
 	co = checkout
