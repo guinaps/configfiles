@@ -1,0 +1,12 @@
+[ui]
+username = Guilherme De Napoli <guinaps@gmail.com>
+verbose = True
+
+[extensions]
+bookmarks =
+color =
+hgext.graphlog =
+mq =
+
+[bookmarks]
+track.current = True
