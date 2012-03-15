@@ -10,9 +10,19 @@ defscrollback 10000
 # show the name of current process as the window name
 shelltitle "$ |bash"
 
-# 'C-p b' transfers content copied from scrollback to the Mac clipboard
-bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
-
 # status bar at the bottom
 hardstatus alwayslastline "%{b kw}%H %{r}%1` %{w}| %{g}%c %{w}| %{y}%d.%m.%Y %{w}| %{g}%l %{w}| %{-b kw}%u %-Lw%{= rW}%50> %n%f %t %{-}%+Lw%<"
 
+# FOR MAC OS:
+# 'C-j b' transfers content copied from scrollback to the Mac clipboard
+#
+#bind b eval "writebuf" "exec sh -c 'pbcopy < /tmp/screen-exchange'"
+
+# FOR REMOTE SERVERS:
+# make ssh look at a symlink to keep agent forwarding working on reattached sessions;
+# also add the following to ~/.ssh/rc to keep the symlink up-to-date:
+#
+## test $SSH_AUTH_SOCK && \
+##   ln -sf "$SSH_AUTH_SOCK" "$HOME/.authsock"
+#
+#setenv SSH_AUTH_SOCK "$HOME/.authsock"
