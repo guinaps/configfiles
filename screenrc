@@ -1,6 +1,9 @@
 # don't show startup screen
 startup_message off
 
+# enabling 256 colors
+term screen-256color
+
 # redefining command key
 escape ^Ja
 
