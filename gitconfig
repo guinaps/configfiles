@@ -1,8 +1,8 @@
 [user]
 	name = Guilherme De Napoli
 	email = guinaps@gmail.com
-#[core]
-#	excludesfile = /Users/guilherme/.gitignore
+[core]
+	excludesfile = ~/.gitignore
 [alias]
 	br = branch
 	co = checkout
