@@ -1,9 +1,6 @@
 [user]
 	name = Guilherme De Napoli
 	email = guinaps@gmail.com
-
-[diff]
-	color = auto
 #[core]
 #	excludesfile = /Users/guilherme/.gitignore
 [alias]
@@ -14,3 +11,5 @@
 	h = help
 [push]
 	default = tracking
+[color]
+	ui = true
